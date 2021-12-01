@@ -1,0 +1,9 @@
+.card_list_style {
+    /* background-color: aquamarine; */
+    width: 87vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
