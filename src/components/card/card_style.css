@@ -1,10 +1,14 @@
 .card_style {
+    margin-top: 20px;
+    width: 20%;
+    height: 300px;
     background-color: #95dada;
     display: flex;
     flex-direction: column;
-    border: 1px, solid ,gray; 
+    align-items: center;
+    border : 1px solid gray;
     border-radius: 5px;
-    padding: 25px;
+    /* padding: 25px; */
     cursor: pointer;
     transform: translateZ(0);
     transition: transform 0.25s ease-out;

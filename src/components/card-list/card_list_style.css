@@ -1,9 +1,14 @@
 .card_list_style {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
     /* background-color: aquamarine; */
-    width: 87vw;
+    /* width: 20vw;
+    margin: 0 auto;
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
-    text-align: center;
-    margin: 0 auto;
+    grid-gap: 20px; */
 }
