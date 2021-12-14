@@ -20,14 +20,25 @@ export default class App extends Component {
   }
 
   render() {
+    const { monsters, searchField } = this.state;
+    const monsterFilter = monsters.filter((e) =>
+    // console.log('filter',e.name)
+      e.name.toLowerCase().includes(searchField.toLowerCase())
+    );
+    // console.log('romel',searchField);
+    
     return (
-      // console.log(monsters):
       <div style={{ width: "100%" }}>
-         <SearchBox text="search" 
-        handlechange ={e => this.setState({searchField: e.target.value})}
+        <h1 className="title">Monsters Roledex</h1>
+        {/* {console.log(monsters)}; */}
+        <SearchBox
+          text="search"
+          handlechange={(e) => this.setState({ searchField: e.target.value })}
+                    // handlechange={(e) =>console.log(e.target.value)}
+
         />
-        <CardList item={this.state.monsters} />
-       
+        {/* <CardList item={this.state.monsters} /> */}
+        <CardList item={monsterFilter} />
       </div>
     );
   }
