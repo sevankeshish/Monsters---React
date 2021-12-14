@@ -7,7 +7,10 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      monsters: [],
+      monsters: [
+        // {image: ./././}  image from pc directopry not internet
+        // {image: ./././}
+      ],
       searchField: "",
     };
   }
